@@ -1,0 +1,26 @@
+{
+  "model_architecture": "HistGradientBoostingRegressor (scikit-learn)",
+  "pipeline_stages": [
+    "OneHotEncoder",
+    "HistGradientBoostingRegressor"
+  ],
+  "training_source": "NYC TLC Yellow Taxi Trip Telemetry (March 2016)",
+  "raw_record_count": 12210952,
+  "total_zone_pickups": 6765030,
+  "hourly_zone_samples": 7440,
+  "train_samples": 5952,
+  "test_samples": 1488,
+  "metrics": {
+    "r2_score": 0.9818,
+    "mae": 85.19,
+    "rmse": 152.01
+  },
+  "features": [
+    "pickup_area",
+    "hour",
+    "day_of_week",
+    "is_weekend"
+  ],
+  "target": "pickups",
+  "generated_at": "2026-10-23T11:29:44.415676"
+}
